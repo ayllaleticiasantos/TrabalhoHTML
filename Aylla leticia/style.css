@@ -1,0 +1,39 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #cceeff, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #00aaff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    background-color: #0077aa;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+main {
+    padding: 20px;
+}
+ul {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    display: block;
+    margin: 20px auto;
+}
