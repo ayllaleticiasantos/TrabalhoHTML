@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>
+  <header>
+    <h1>Cadastre-se em nosso site</h1>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="#">Praias</a></li>
+        <li><a href="#">Urbano/Cultural</a></li>
+        <li><a href="#">Natureza</a></li>
+        <li><a href="#">Turismo Rural</a></li>
+      <li><a href="/formulário">Cadastro</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="/formulário" method="get" autocomplete="on">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <p>
+          <label for="inome">Nome Completo:</label><br>
+          <input type="text" name="nome" id="inome" minlength="5" maxlength="25" placeholder="Digite seu nome completo" required>
+        </p>
+
+        <p>
+          <label for="iemail">E-mail:</label><br>
+          <input type="text" name="email" id="iemail" autocomplete="email" placeholder="seuemail@exemplo.com">
+        </p>
+
+        <p>
+          <label for="itel">Telefone (formato (XX)XXXXX-XXXX):</label><br>
+          <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(11)91234-5678" required>
+        </p>
+
+        <p>
+          <label for="ipassword">Crie uma senha:</label><br>
+          <input type="password" name="password" id="ipassword" placeholder="Digite sua senha" minlength="8" maxlength="12" autocomplete="off" required>
+        </p>
+
+        <p>
+          <label for="iidade">Idade:</label><br>
+          <input type="number" name="idade" id="iidade" min="0" max="120" placeholder="Sua idade" style="width: 58px;">
+        </p>
+
+        <p>
+          <label for="iestado">Estado:</label><br>
+          <select name="estado" id="iestado">
+            <option value="" selected> --Selecione seu estado-- </option>
+            <optgroup label="Região Nordeste">
+              <option value="MA">Maranhão</option>
+              <option value="PE">Pernambuco</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="AL">Alagoas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PI">Piauí</option>
+              <option value="SE">Sergipe</option>
+            </optgroup>
+            <optgroup label="Região Sudeste">
+              <option value="MG">Minas Gerais</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">São Paulo</option>
+              <option value="ES">Espírito Santo</option>
+            </optgroup>
+            <optgroup label="Região Centro-Oeste">
+              <option value="DF">Distrito Federal</option>
+              <option value="GO">Goiás</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+            </optgroup>
+            <optgroup label="Região Norte">
+              <option value="AC">Acre</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="PA">Pará</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="TO">Tocantins</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+              <option value="PR">Paraná</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="SC">Santa Catarina</option>
+            </optgroup>
+          </select>
+        </p>
+
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Turismo Rural Brasil.</p>
+  </footer>
+</body>
+</html>
