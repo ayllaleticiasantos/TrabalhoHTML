@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo em Brasília</title>
+  <link rel="stylesheet" href="style.css">    
+  <style>
+    header {
+        width: 100%;
+        height: 100vh;
+        background-image: url('Imagens/Imagem7.PNG');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h1 {
+        color: white;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    .nav-logo {
+        height: 75px; /* ajuste conforme o tamanho desejado */
+        width: auto;
+        margin-right: 200px;
+    }
+
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card .info {
+      padding: 1rem;
+    }
+    
+  </style>
+</head>
+<body>
+    <header>
+        <h1>A Capital do Brasil como você nunca viu... <br> através do Turismo!</h1>
+    </header>
+    <nav>
+        <a href="#">
+            <img src="Imagens/logo3.png" alt="Logo do site" class="nav-logo">
+        </a>
+        <ul>
+            <li><a href="#pontos">Pontos turísticos</a></li>
+            <li><a href="#roteiros">Roteiros Temáticos</a></li>
+            <li><a href="#gastronomia">Gastronomia</a></li>
+            <li><a href="#blog">Blog de Notícias</a></li>
+        </ul>
+    </nav><br>
+
+    <h2>Brasília</h2>
+    <p>O principal símbolo da arquitetura modernista, inaugurada em 21 de abril de 1960, <br> é a única cidade construída no século 20 a ser reconhecida como Patrimônio Histórico e Cultural Mundial pela Unesco.<br>
+     É ideal para quem busca um passeio com um clima agradável, rico em conhecimento e belas paisagens.</p>
+
+   <main>
+
+    <section id="pontos">
+        <h2>Os principais pontos turísticos para se visitar em Brasília:</h2><br>
+
+        <ol>
+            <li>
+                <figure>
+                    <figcaption>Catedral Metropolina de Brasília</figcaption><br>
+                    <img src="Imagens/Imagem1.PNG" width="450px" height="300px" alt="Catedral de Brasília">
+                    <p>A Catedral de Brasília – oficialmente Catedral Metropolitana Nossa Senhora Aparecida  – é uma das atrações mais impressionantes da capital federal. Seja pela magnífica arquitetura, vitrais coloridos ou grandiosas esculturas, a Catedral é um desses monumentos capazes de causar comoção à primeira vista. A cada visita é possível descobrir ângulos ainda mais incríveis da igreja, garantindo assim que a paixão por essa obra de arte não se esgote jamais.</p>
+                </figure>
+            </li><br>
+            <li>
+                <figure>
+                    <figcaption>Memorial JK</figcaption><br>
+                    <img src="Imagens/memorial-jk.jpg" width="450px" height="300px" alt="Memorial JK">
+                    <p>O Memorial é um museu, que abriga os restos mortais de JK, além de objetos pessoais, fotos e materiais que retratam sua vida e obra, inclundo a contrução de Brasília.</p>
+                </figure>
+            </li><br>
+            <li>
+                <figure>
+                    <figcaption>Palácio Itamaraty</figcaption><br>
+                    <img src="Imagens/palácio itamaraty.jpg" width="450px" height="300px" alt="Palácio do Itamaraty">
+                    <p>O Palácio Itamaraty foi projetado para acolher os banquetes oferecidos pelo Presidente da República ao chefes de Estado estrangeiros em visita ao Brasil.</p>
+                </figure>
+            </li><br>
+            <li>
+                <figure>
+                    <figcaption>Ponte JK</figcaption><br>
+                    <img src="Imagens/ponte jk.png" width="450px" height="300px" alt="Ponte JK">
+                    <p>A Ponte Juscelino KubitscheK, foi construída para unir o lago Sul com o Plano Piloto. A obra da Ponte JK impressiona pela funcionalidade e pela arquitetura monumental que transformam o empreendimento em uma execução ímpar da engenharia brasileira.</p>
+                </figure>
+            </li>   
+        </ol>
+    </section>
+
+    <section id="roteiros">
+        <br><h2>Roteiros Temáticos</h2><br>
+        <ul>
+        <li><strong>Rota Cívica</strong> – Visita aos principais edifícios governamentais e monumentos históricos.</li>
+        <li><strong>Rota Arquitetônica</strong> – Exploração das obras de Niemeyer e do urbanismo de Lúcio Costa.</li>
+        <li><strong>Rota Cultural</strong> – Centros culturais, teatros e espaços artísticos.</li>
+        <li><strong>Rota do Cerrado</strong> – Contato com a natureza e trilhas ecológicas.</li>
+        </ul>
+    </section>
+
+    <section id="gastronomia" class="section">
+        <h2>Gastronomia</h2>
+        <p>A gastronomia de Brasília é composta por uma fusão de diferentes influências culinárias, tendo como resultado uma variedade de pratos que vão da cozinha regional do cerrado a opçõesinternacionais.  Nos sabores do cerrado temos pratos típicos como galinhada, pequi, pamonha e opções para todos os gostos.</p>
+        <img src="Imagens/pequi.jpg" alt="Gastronomia">
+    </section>
+
+    <section id="blog" class="section">
+        <h2>Blog de Notícias</h2><br>
+        <div class="cards">
+        <div class="card">
+            <div class="info">
+            <img src="Imagens/festival.jpg" alt="Festival de Inverno">
+            <h4>Festival de Inverno 2025</h4>
+            <p>O Festival de Inverno de Brasília traz shows, gastronomia e arte em julho.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+            <img src="Imagens/ccbb.jpg" alt="CCBB">
+            <h4>Nova exposição no CCBB</h4>
+            <p>Mostra de arte contemporânea reúne artistas nacionais e internacionais.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="info">
+            <img src="Imagens/feira do livro.jpg" alt="Feira do Liro">
+            <h4>Feira do Livro movimenta o Eixo Cultural</h4>
+            <p>Evento reúne autores, leitores e editoras em diversas atrações gratuitas.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 - Turismo em Brasília.</p>
+  </footer>
+</body>
+</html>
